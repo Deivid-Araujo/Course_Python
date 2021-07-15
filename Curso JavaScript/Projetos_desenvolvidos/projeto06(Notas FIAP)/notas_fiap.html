@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas FIAP</title>
+    <link rel="stylesheet" href="estilo001.css">
+</head>
+<body>
+    <header>
+        <img src="logot.png" alt="logotipofiap"><br>
+        NOTAS FIAP
+    </header>
+    <section>
+        <div>
+            <p><strong>Primeiro semestre(40%):</strong></p>
+            Checkpoint 01: <input type="number" name="cp1s1" id="cp1s1"><br>
+            Checkpoint 02: <input type="number" name="cp2s1" id="cp2s1"><br>
+            Checkpoint 03: <input type="number" name="cp3s1" id="cp3s1"><br>
+            Checkpoint 04: <input type="number" name="cp4s1" id="cp4s1"><br>
+            Global Solution: <input type="number" name="gsolution1" id="gsolution1">
+            <input type="button" value="Calcular" onclick="calcular01()">
+        </div>
+        <div id="res1">
+            <p>Resultado segundo semestre </p>
+        </div>
+        <div>
+            <p><strong>Segundo semestre(60%):</strong></p>
+            Checkpoint 01: <input type="number" name="cp1s2" id="cp1s2"><br>
+            Checkpoint 02: <input type="number" name="cp2s2" id="cp2s2"><br>
+            Checkpoint 03: <input type="number" name="cp3s2" id="cp3s2"><br>
+            Checkpoint 04: <input type="number" name="cp4s2" id="cp4s2"><br>
+            Global Solution: <input type="number" name="gsolution2" id="gsolution2">
+            <input type="button" value="Calcular" onclick="calcular02()">
+        </div>
+        <div id = "res2">
+            <p>Resultado segundo semestre </p>
+        </div>
+        <div>
+            <p>Média final:</p>
+            Nota do 1º semestre:<input type="number" name="notaf1" id="notaf1"><br>
+            Nota do 2º semestre:<input type="number" name="notaf2" id="notaf2">
+            <input type="button" value="Resultado" onclick="resultado()"><br>
+                
+        </div>
+        <div id="res3">
+            <p> Resultado média final </p>
+        </div>
+    </section>
+    <footer>
+        &copy; Deivid Araujo Cunha
+    </footer>
+    <script src="scriptfiap.js"></script>
+</body>
+</html>

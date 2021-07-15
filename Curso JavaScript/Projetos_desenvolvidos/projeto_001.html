@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project001</title>
+    <style>
+        body{
+            background-color: royalblue;
+            color:whitesmoke;
+            font:normal 18 pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Projeto</h1>
+    <p>Esse é o primeiro site, estamos com auxilio do caderno, Deivid!</p>
+    <p>Esse é o segundo parágrafo</p>
+    <!--<input type="button" value="Clica aqui!!" id="botão">--><!--criação de botão-->
+    <div id = 'div01' onclick ='clicar()'>Essa vai ser a primeira div</div>
+    <div id = 'div02' onmouseenter = 'entrou()'>Segundaaaa div</div>
+    <div class = 'div03'>Terceira div mlk</div>
+    <script>
+        var prato = 'lasanha'
+        var n1 = Number(17) 
+        document.write('Ele irá tatuar um' + ' Tigre</br>')
+        document.write(`Seu prato favorito é ${prato}?</br>`) 
+        document.write(`Sua idade é: ${n1} </br>`)
+        document.write('Concatenando número com string é: ' + 3 + 10 + '</br>')
+        /*    confirm('Are you awesome?')
+              alert('ALERTAAAA!!!!')
+              prompt('Qual seu nome?')      */
+        tamanho = prato.length
+        ma = prato.toUpperCase()
+        mi = prato.toLowerCase()
+        document.write(`Numero de letras: ${tamanho}, em maiusculo: <strong>${ma}</strong>, em minusculo: <strong>${mi}</strong>`)               
+        var cor_parag = document.querySelectorAll('p')
+        cor_parag[0].style.color = 'Red'
+        var format_div1 = document.getElementById('div01')
+        format_div1.style.color = 'black'
+        var format_div2 = document.getElementsByTagName('div')[1]
+        format_div2.style.color = 'orange'
+        var format_div3 = document.querySelector('div.div03')
+        format_div3.style.color = 'Purple'
+        function clicar(){
+            format_div1.style.backgroundColor = 'Yellow'
+        }
+        function entrou(){
+            format_div2.style.color = 'red'
+        }
+        format_div3.addEventListener('click', clicou2)
+        function clicou2(){
+            format_div3.innerHTML = 'Você é demais!!!'
+        }
+    </script>
+</body>
+</html>
